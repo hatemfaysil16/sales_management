@@ -1,0 +1,378 @@
+/* main rulez */
+
+body {
+	background-color: #f5f5f5;
+}
+
+hr {
+	border-color: #cecece;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+/* start navbar bootstrap  */
+header .navbar {
+	background-color: #34495e;
+	border-radius: 0
+}
+
+
+header .navbar a {
+	color: #eee
+}
+
+header .navbar .container-edit {
+	width: 1300px;
+	margin: auto
+}
+
+header .navbar .logo {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.navbar-header i {
+	color: #eee;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+.nav > li > a:hover, .nav > li > a:focus,
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: #3498db
+}
+
+.dropdown-menu {
+	background-color: #3498db
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	color: #eee;
+	text-decoration: none;
+	background-color: #262626;
+}
+
+.navbar-nav > li > a .noti {
+	background-color: #e74c3c;
+	border-radius: 50%;
+	padding: 0px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 25px;
+	left: 22px;
+	line-height: 20px;
+}
+
+.navbar-nav > li > a .msg {
+	background-color: #f39c12;
+	border-radius: 50%;
+	padding: 0px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 25px;
+	left: 22px;
+	line-height: 20px;
+}
+
+.nav > li > a > img {
+	width: 45px;
+	height: 45px;
+
+}
+
+ .nav > li > ul > li >img{
+	width: 126px;
+	height: 126px;
+	margin: 15px;
+	border: 3px solid #396b8d;
+}
+
+.show-profile {
+	padding: 10px;
+}
+
+.navbar-nav > li > a {
+	padding-top: 4px;
+	padding-bottom: 5px;
+	line-height: 40px;
+}
+
+.nav > li > a > i {
+	line-height: 40px
+}
+
+
+/* end navbar bootstrap  */
+
+/* start sidenav */
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 56px;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: -15px;
+    right: 1px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* end sidenav */
+
+/* Start Section Accordion */
+ /* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: transparent;
+    color: #eee;
+    cursor: pointer;
+    padding: 12px;
+    width: 85%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel1 {
+    padding: 0 0px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #eee;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+/* End Section Accordion */
+
+/* Start Content */
+.content-wrapper {
+	margin: 0 10px
+}
+
+.table-data {
+	background-color: #34495e;
+	box-shadow: 6px 8px 5px #ccc;
+	transition: all 0.5s ease-in-out
+}
+.table-data thead{
+	color: #eee
+}
+
+.table-data td:hover {
+	background-color: #efeded;
+}
+
+.table-data td {
+	background-color: #f2f2f2;
+}
+
+.links li {
+	display: inline-block;
+	margin-left: 5px
+}
+
+.links {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+/* End Content */
+
+/* start add page */
+
+.search-box form {
+	width: 100%;
+}
+
+.search-box input, .search-box button {
+	float: left;
+}
+
+.search-box input {width: 77%; margin-right: 3%; border-radius: 50px}
+
+.search-box .search-btn {width: 17%;  margin-right: 3%; border-radius: 50px}
+
+.form-add form {
+	width: 100%
+	margin: 0;
+	overflow: hidden;
+}
+
+.add-page .o-side, .add-page .side { float: left; }
+
+form .side { width: 65%; margin-right: 5% }
+
+form .o-side { width: 30% }
+
+form .o-side panel-title{margin: 110px;font-size: 18px}
+
+.img-item{
+	margin-top: 25px
+}
+
+.add-page{
+	padding-bottom: 30px;
+}
+
+.search-sup .search {
+	margin: -5px
+}
+
+.box-search {
+	display: none;
+}
+
+input[type="file"]{
+	display: none;
+}
+
+.reset-thumb {
+	display: none;
+	background-color: #ccc;
+	position: relative;
+	width: 280px;
+	height: 35px;
+	top: -50px;
+	left: 15px;
+	line-height: 25px
+}
+/* end add page */
+
+.sidebar .sidenav .panel1{
+	    background-color: #1b1b1b;
+}
+.sidebar .sidenav .accordion{
+    font-size: 20px;
+	}
+
+.sidebar .sidenav .panel1 >a {
+	max-height: 213px;
+    padding-left: 40px;
+    background-color: #1b1b1b;
+    color: #325273;
+    font-size: 15px;
+    font-weight: normal;
+    width: 233px;
+}
+.sidebar .sidenav .panel1 > a > i {
+	color: #eee
+}
+
+/* start section users */
+.login-form {
+	width: 450px;
+	margin: 50px auto;
+	height: 400px
+}
+.login-form h2{
+	margin: 0;
+	padding: 0
+}
+
+.show-profile a {
+	display: inline-block;
+}
+
+.profile-btn {
+	color: #000
+}
+
+.avatar {
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+}
+
+.img_preview {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+}
+
+/* End section Users */
+
+/* Start Section Rights To Access */
+.table-rights tbody > tr > td{
+	line-height: 30px
+}
+
+.fa-roles-true .fa, .fa-roles-false .fa {
+	color: #eee;
+	border-radius: 3px;
+	padding: 3px;
+	display: inline-block;
+}
+
+.fa-roles-true .fa { background-color: #5cb85c }
+
+.fa-roles-false .fa { background-color: #bf4a4a }
+
+.role_name { margin-top: 12px }
+
+.td-roles p span:first-child{
+	width: 100px;
+	display: inline-block;
+}
+
+.td-roles p{
+	margin: 0
+}
+/* End Section Rights To Access */
